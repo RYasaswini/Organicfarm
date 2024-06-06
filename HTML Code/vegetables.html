@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .nav-bar{
+                font-size:15px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar navbar-expand-lg nav-bar" style="background-color: rgb(118, 211, 118);border-bottom:5px solid rgb(9, 92, 9);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="project.html"><img src="logo.png" style="width:90px;height:60px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#organic">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="organic">
+                        <ul class="navbar-nav ms-auto nav-pills">
+                            <li class="nav-item"><marquee direction="left" style="padding-top: 9px;">Happiness Is The Highest Form Of Health Build Your Happiness Through Organic Products.</marquee></li>
+                            <li class="nav-item"><a class="nav-link " href="project.html" style="color:white">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color:white">Categories</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item " href="fruits.html">Fruits</a></li>
+                                    <li></li> <hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item active" href="vegetables.html">Vegitables</a></li>
+                                    <li></li> <hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="millets.html">Millets & Pulses</a></li>
+                                    <li></li> <hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="dairy.html">Dairy Products</a></li>
+                                    <li></li> <hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="spices.html">Spices</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" style="color:white">Contact</a</li>
+                            <li class="nav-item"><a class="nav-link" href="about1.html" style="color:white" >About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modal2" style="color:white">Suggestions</a></li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+        </div>
+     
+  </div>
+        <div class="modal w-500" id="modal2"  >
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-body " style="background-color:papayawhip">
+                     <div class="modal-header">
+                        <h2 class="modal-title">Suggestion</h2>
+                <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                      </div>
+                        <form id="suggestion" action="fupload.php" method="post" enctype="multipart/form-data">
+                              <div class="mb-3">
+                               <p>if you want to buy any other organic products which are not available in our website you can suggest us by uploading their images here.</p>
+                              <label for="Fileupload" class="form-label">upload your file</label>
+                              <input class="form-control" type="file" name="file" id="Fileupload">
+                               </div>
+                        
+                            <input type="submit" value="Submit" class="btn  w-100" name="submit" style="background-color:rgb(13, 155, 25)">
+                         </form>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" style="background-image:url('yashu.jpg');">
+                <div class="offcanvas-header" >
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Contact Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                        <h1 style="font-weight:20px;"><u>Contact Us</u></h1>
+                        <div style="color:rgb(131, 127, 127);font-weight:25px;font-size:25px" id="offcanvas">
+                          <b>Name:</b><br>
+                          <h4>R.Yasaswini</h4>
+                          <b>Email:</b><br>
+                          <a href="mailto: organic@gmail.com">organic@gmail.com</a>
+                        <br>
+                        <b>Follow us on:</b> <br><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        </i><a href="https://twitter.com" ><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                </div>
+              </div>
+        <div class="row mb-3" style="padding-top: 9px;">
+            <div class="col-3">
+            <div class="card" style="width:19rem;height:450px" >
+            <img src="v1.jpg" class="card-img-top" style="height: 210px">
+        <div class="card-body">
+            <h4 class="card-text">Fresh Bringal(300G)</h4>
+            <p class="card-text">Creamy tasting with soft seeds. Best suited to make bharta. </p>
+            <bold>RS:70.00</bold>
+        </div>
+        <div class="card-footer">
+            <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+        </div>
+            </div>
+        </div>
+            <div class="col-3">
+            <div class="card" style="width:19rem;height:450px" >
+            <img src="v2.jpg" class="card-img-top" style="height: 210px">
+        <div class="card-body">
+            <h4 class="card-text">Fresh Drumstick(250G)</h4>
+            <p class="card-text">Creamy tasting with soft seeds. Best suited to make bharta. </p>
+            <bold>RS:25.00</bold>
+        </div>
+        <div class="card-footer">
+            <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+        </div>
+            </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v3.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Tomato(500G)</h4>
+                <p class="card-text">Slightly acidic. Suited for South Indian style cooking. </p>
+                <bold>RS:100.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v4.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Cauliflower (400G)</h4>
+                <p class="card-text">With lower carbs, calories than regular rice, try as ‘cauli-rice’.</p>
+                <bold>RS:60.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+            <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v5.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Beetroot (600G)</h4>
+                <p class="card-text">Firm and well-formed shape. Distinct earthy flavour. </p>
+                <bold>RS:60.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v6.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Potato(1Kg)</h4>
+                <p class="card-text">The fleshy part of the root (potato) is commonly eaten as a vegetable.</p>
+                <bold>RS:75.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v7.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh LadiesFinger (500G)</h4>
+                <p class="card-text">Uniformly tender and mature. Perfect for immediate use.</p>
+                <bold>RS:75.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v8.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Capsicum (300G)</h4>
+                <p class="card-text">Good source of dietary fibre, vitamin E, B6 and folate.</p>
+                <bold>RS:45.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v9.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh GreenChilli (250G)</h4>
+                <p class="card-text">Medium spicy and Green chillies have anti-inflammatory compounds.</p>
+                <bold>RS:38.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v10.jpeg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh SweetPotato (500G)</h4>
+                <p class="card-text">Sweet potatoes are nutritious, packing a good amount of vitamin A.</p>
+                <bold>RS:50.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v11.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Bottlegourd (1PCS)</h4>
+                <p class="card-text">Juicy and with abundant flesh, ideal for a family of four.</p>
+                <bold>RS:52.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: 19rem;height:450px" >
+                <img src="v12.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Cabbage (400G)</h4>
+                <p class="card-text">Firm with a crispy texture for easier cooking.</p>
+                <bold>RS:60.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v13.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Radish (550G)</h4>
+                <p class="card-text">The White root vegetable is rich in antioxidants, Calcium & Potassium.</p>
+                <bold>RS:32.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v14.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Carrot(500G)</h4>
+                <p class="card-text">Sweet tasting. Suitable for cooking and raw consumption.</p>
+                <bold>RS:50.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v15.jpeg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh SnackGourd(1kg)</h4>
+                <p class="card-text">Snake Gourd Health Benefits, Nutrition, Uses For Skin And Hair.</p>
+                <bold>RS:20.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v16.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Flatbeans(1kg)</h4>
+                <p class="card-text">Flat beans are a good source of proteins, vitamins A, K, C etc.</p>
+                <bold>RS:40.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v17.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Sweetcorn(2PCS)</h4>
+                <p class="card-text">Great Pro-biotic that is high in carbs, fibres, vitamins & minerals.</p>
+                <bold>RS:35.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v18.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Green Peas(1kg)</h4>
+                <p class="card-text">Green peas may be used for the conditions of the stomach and heart.</p>
+                <bold>RS:70.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v19.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Pumpkin(2kg)</h4>
+                <p class="card-text">Nutritious orange vegetable.The thick shell contains the seeds and pulp.</p>
+                <bold>RS:90.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v20.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Bittergourd(1kg)</h4>
+                <p class="card-text">Umami tasting, often consumed to reduce blood sugar.</p>
+                <bold>RS:40.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v21.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Beans (500G)</h4>
+                <p class="card-text">cooking preparations with our hassle-free Beans cut in the form of strips.</p>
+                <bold>RS:25.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v22.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Ridgegourd (500G)</h4>
+                <p class="card-text">Tender, juicy and succulent with minimal peel.</p>
+                <bold>RS:58.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v23.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Row Banana (500G)</h4>
+                <p class="card-text">Raw bananas are rich in potassium and controls blood pressure levels.</p>
+                <bold>RS:48.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v24.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Ginger(100G)</h4>
+                <p class="card-text">Use for flavour and optimum pungency for your cooking.</p>
+                <bold>RS:48.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v25.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Garlic(250G)</h4>
+                <p class="card-text">Grown by us to provide optimum pungency for your cooking.</p>
+                <bold>RS:58.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v26.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Mashroom(250G)</h4>
+                <p class="card-text">Mushrooms are a rich, low calorie source of fiber,and antioxidants.</p>
+                <bold>RS:50.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v27.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Onion(1kg)</h4>
+                <p class="card-text">Onions of 45-55mm diameter are ideal for home cooking.</p>
+                <bold>RS:39.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v28.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Coriander- Greenhouse grown(100G)</h4>
+                <p class="card-text">Earthy and peppery in taste.</p>
+                <bold>RS:20.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v29.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh CurryLeaves (50G)</h4>
+                <p class="card-text">Extremely aromatic and have a strong flavour, use curry is to make “tadka”.</p>
+                <bold>RS:9.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v30.webp" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Cucumber (500G)</h4>
+                <p class="card-text">Mild and refreshing taste. Juice or consume as a salad.</p>
+                <bold>RS:33.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v311.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh MintLeaves (500G)</h4>
+                <p class="card-text">Mint is a fragrant and delicious plant that is an ingredient in many foods.</p>
+                <bold>RS:30.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width:19rem;height:450px" >
+                <img src="v32.jpg" class="card-img-top" style="height: 210px">
+            <div class="card-body">
+                <h4 class="card-text">Fresh Gongura(200G)</h4>
+                <p class="card-text">It is an excellent source of folate and a very good source of vitamin B6.</p>
+                <bold>RS:10.00</bold>
+            </div>
+            <div class="card-footer">
+                <button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BUY NOW</button>
+            </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">ORDER DETAILS</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                  <div class="modal-body" style="background-color: pink;">
+                    <form method="post" action="project.php">
+                        <div class="form-group">
+                            <div class="input-group  mb-3">
+                                <span class="input-group-text" ><b>NAME:</b></span>
+                                <input type="text" class="form-control" placeholder="Username" name="name" required>
+                        </div>
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text" ><b>EMAIL:</b></span>
+                            <input type="email" class="form-control" placeholder="Enter email" name="email" required >
+                    </div>
+                    <div class="input-group mb-3 ">
+                        <span class="input-group-text" ><b>PHONE NUMBER:</b></span>
+                        <input type="text" class="form-control" placeholder="Enter number" name="phone" required>
+                </div>
+                <div class="input-group mb-3 ">
+                    <span class="input-group-text" ><b>ADDRESS:</b></span>
+                    <textarea class="form-control" placeholder="Enter address" name="address" required></textarea>
+            </div>
+            <div class="input-group mb-3 ">
+                <span class="input-group-text" ><b>PINCODE:</b></span>
+                <input type="text" class="form-control" placeholder="Enter pincode" name="pincode" required>
+            </div>
+            <div class="input-group mb-3 ">
+                <span class="input-group-text" ><b>PAYMENT TYPE:</b></span>
+                <select class="form-select" name="payment" required>
+                    <option value="choose">CHOOSE PAYMENT TYPE</option>
+                    <option value="COD">COD</option>
+                    <option Value="PHONEPAY">PHONEPAY</option>
+                    <option value="GPAY">GPAY</option>
+                    <option value="PAYTM">PAYTM</option>
+                </select>
+            </div>
+            <div class="mt-3">
+                <input type="reset" value="Reset" class="btn w-100" name="reset" style="background-color: red;" >
+                </div>
+                <div class="mt-3">
+                <button type="submit" name="submit" class="btn w-100" style="background-color: green;" >Submit</button>
+                </div>
+            </form>
+                </div>
+              </div>
+            </div>
+          </div>     
+    </body>
+    </html>
